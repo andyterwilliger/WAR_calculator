@@ -35,7 +35,7 @@ function calculateWAR(){
     let repRunsValue = parseFloat(repRuns.value)
     let rpwValue = parseFloat(rpw.value)
     let WAR = parseFloat(wraaValue + bsrValue + uzrValue + posAdjValue + leagueAdjValue+ repRunsValue)/ parseFloat(rpwValue)
-    console.log(WAR.toFixed(1))
+    results.innerHTML = (WAR.toFixed(1))
 }
 
 function handleForm(event){
